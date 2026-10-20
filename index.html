@@ -151,7 +151,7 @@ const SERIES = [
     name: "Season One",
     short: "S1",
     aired: "July 2026",
-    tagline: "An engagement party for the very rich, until a stranger walks in. He is secretly the richest man in the room, and he has spent weeks planning his revenge.",
+    tagline: "An engagement party for the very rich, until a stranger walks in...",
     episodes: [
       { id: "1234182941", secs: 126, thumb: "2210073062-d06ea5bf0907a14a3de964a8319c20f7e60e8ab2593ad3cde37fc897d52bf9ac-d" },
       { id: "1234182940", secs: 126, thumb: "2210073063-71def683db2715f0ab6cf913771dd2bc8812f20becd1ec4b1187923ecfb2ef1c-d" },
@@ -226,7 +226,7 @@ const allEps = SERIES.flatMap(s => s.episodes.filter(e => !e.promo));
       <div class="eyebrow">${esc(PRESENTER)} presents</div>
       <h1>${esc(SHOW.a)}<em>${esc(SHOW.b)}</em></h1>
       <div class="rule"></div>
-      <p>A vertical microdrama about very rich people behaving very badly. ${allEps.length} episodes across ${SERIES.length} seasons, about two minutes each.</p>
+      <p>A vertical microdrama about very rich people behaving very badly. ${allEps.length} episodes across ${SERIES.length} seasons.</p>
       <dl class="cast">${CAST.map(([a,c]) => `<dt>${esc(a)}</dt><dd>${esc(c)}</dd>`).join("")}</dl>
       <div class="credit">${esc(CREDITS)}</div>
       <button class="go" type="button" data-jump="1">Start watching</button>
